@@ -16,6 +16,9 @@ import  { readFile } from 'node:fs';
 
 readFile(join(__dirname,'video3.txt'),{encoding:'utf-8'},(err,data)=>{
     if (!err){
+        log(err);
+    }
+    else{
         log(data);
     }
 })
